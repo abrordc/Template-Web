@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+    --color-blue: #007bff;
+    --color-scroll: #8403fc;
+}
+
+body {
+    font-family: "Overpass", sans-serif !important;
+    cursor: url(../../img/sedang.png), auto;
+}
+.sambutan {
+    font-family: "Courier New", Sans-Serif;
+    font-weight: bold;
+    text-shadow: #eee 1px 0 10px;
+}
+
+.sambutan-dumy {
+    font-weight: bold;
+    color: black;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+nav {
+    backdrop-filter: blur(10px);
+}
+.navbar ul > li > a {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.08em;
+    border-top: solid 5px transparent;
+}
+.bg-nav-dropdown {
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+/* .dropdown-menu {
+    max-height: 200px;
+    overflow-y: scroll;
+} */
+.dropdown-menu {
+    max-height: 150px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-right: 20px;
+}
+.dropdown-menu::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+.dropdown-menu::-webkit-scrollbar-thumb {
+    background-color: var(--color-scroll);
+    border-radius: 10px;
+}
+
+.dropdown-menu::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+.dropdown-menu::-webkit-scrollbar {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+.dropdown-menu {
+    direction: rtl;
+}
+.dropdown-menu * {
+    direction: ltr;
+}
+
+.jumbotron {
+    background:
+        linear-gradient(rgba(40, 120, 235, 0.9), rgba(40, 120, 235, 0.9)),
+        url(../../img/header.jpg),
+        no-repeat center center;
+    background-size: cover;
+}
+
+.jumbotron.page-header {
+    background:
+        linear-gradient(rgba(40, 120, 235, 0.9), rgba(40, 120, 235, 0.9)),
+        url(../../img/page-header.jpg),
+        no-repeat center center;
+    background-size: cover;
+}
+
+.bg-image {
+    background: linear-gradient(
+            rgba(40, 120, 235, 0.05),
+            rgba(40, 120, 235, 0.05)
+        ),
+        url(../img/bg-image.jpg);
+    background-attachment: fixed;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.m-visi-misi {
+    margin-top: 90px;
+}
+.btn-icon {
+    width: 77px;
+    height: 77px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+.overlay-top::before,
+.overlay-bottom::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 85px;
+    left: 0;
+    z-index: 1;
+}
+
+.overlay-top::before {
+    top: 0;
+    background: url(../../img/overlay-top.png) top center no-repeat;
+    background-size: contain;
+}
+
+.overlay-bottom::after {
+    bottom: 0;
+    background: url(../../img/overlay-bottom.png) bottom center no-repeat;
+    background-size: contain;
+}
+.img-content-size {
+    height: 100px;
+}
+
+/* @media (max-width: 768px) {
+    .navbar ul > li:active > a,
+    .navbar ul > li:open > a {
+        border-top: hidden;
+    }
+
+    .navbar ul > li > a:hover {
+        border-top: hidden;
+    }
+} */
+
+/* .navbar.navbar-light ul > li:active > a {
+    border-top: solid 5px #20616d;
+}
+.navbar.navbar-light ul > li:active > a {
+    border-top: solid 5px #20616d;
+} */
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    outline: none;
+    border: 1px solid #eee;
+    box-shadow: none;
+}
+.navbar-toggler:hover {
+    background-color: rgba(255, 255, 204, 0.2);
+}
+.navbar-toggler span {
+    display: block;
+    background-color: #000;
+    height: 3px;
+    width: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    left: 0;
+    opacity: 1;
+    transition: all 0.35s ease-out;
+    transform-origin: center left;
+}
+
+/* start */
+.navbar-toggler span:nth-child(1) {
+    margin-top: 0.3em;
+}
+
+/* span x  */
+.navbar-toggler:not(.collapsed) span:nth-child(1) {
+    transform: translate(15%, -33%) rotate(45deg);
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(2) {
+    opacity: 0;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(3) {
+    transform: translate(15%, 33%) rotate(-45deg);
+}
+
+.navbar-toggler span:nth-child(1) {
+    transform: translate(0%, 0%) rotate(0deg);
+}
+
+.navbar-toggler span:nth-child(2) {
+    opacity: 1;
+}
+
+.navbar-toggler span:nth-child(3) {
+    transform: translate(0%, 0%) rotate(0deg);
+}
+.type {
+    width: 27ch;
+    padding: 0;
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    font-weight: bold;
+    color: black;
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+
+    50%,
+    100% {
+        width: 27ch;
+    }
+}
+
+@keyframes blink-caret {
+    50% {
+        border-color: transparent;
+    }
+}
+
+#kotak::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    /*agar ada di belakang*/
+    margin: 0;
+    padding: 0;
+    background-image: url("https://sdngalis1.com/img/sdn.jpg");
+    /* Ganti 'gambar_latar_belakang.jpg' dengan URL atau path ke gambar latar belakang Anda */
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    filter: opacity(40%);
+}
+
+#kotak {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.isi {
+    text-align: center;
+    /* color: #fff; */
+    /* Warna teks putih */
+    padding: 20px;
+}
+
+.isi h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.isi p {
+    font-size: 18px;
+}
+.article-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 14px;
+}
+.new-berita:hover {
+    color: rgba(40, 120, 235, 0.9);
+}
+.article-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.back-to-top {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    display: flex;
+    width: 45px;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    z-index: 99;
+}
