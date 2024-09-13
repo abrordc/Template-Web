@@ -146,7 +146,9 @@
                             </a>
                             <ul class="dropdown-menu bg-nav-dropdown">
                                 <li>
-                                    <a class="dropdown-item active" href="budle/semua_informasi.html"
+                                    <a
+                                        class="dropdown-item active"
+                                        href="budle/semua_informasi.html"
                                         >Semua Informasi</a
                                     >
                                 </li>
@@ -355,10 +357,7 @@
                                     </div>
                                     <div class="content">
                                         <h4>
-                                            <a
-                                                href=""
-                                                >SAS</a
-                                            >
+                                            <a href="">SAS</a>
                                         </h4>
                                         <p class="author-category">
                                             By <a href="#">ADMIN</a>
@@ -406,10 +405,7 @@
                                     </div>
                                     <div class="content">
                                         <h4>
-                                            <a
-                                                href=""
-                                                >HGN 2023</a
-                                            >
+                                            <a href="">HGN 2023</a>
                                         </h4>
                                         <p class="author-category">
                                             By <a href="#">ADMIN</a>
@@ -457,8 +453,7 @@
                                     </div>
                                     <div class="content">
                                         <h4>
-                                            <a
-                                                href=""
+                                            <a href=""
                                                 >Sakera dan Marlena Galisa</a
                                             >
                                         </h4>
@@ -786,18 +781,24 @@
             <!-- back to top -->
             <a
                 href="#"
-                class="btn btn-primary border-2 border-white rounded-circle back-to-top"
+                class="btn btn-primary border-2 border-white rounded-circle back-to-top animate__animated"
                 ><i class="bi bi-arrow-up fs-1"></i
             ></a>
+            <!-- end back to top -->
+            <!-- start button Fullscreen -->
+            <button
+                class="btn btn-primary border-2 border-white rounded-circle fullscreen animate__animated"
+                aria-label="Toggle Fullscreen"
+                id="toggleFullscreen"
+                onclick="toggleFullscreen();"
+            >
+                <i class="bi bi-fullscreen fs-5 text-center m"></i>
+            </button>
+            <!-- end button Fullscreen-->
         </div>
-        <!-- end back to top -->
-        <script
-            src="https://code.jquery.com/jquery-3.7.1.min.js"
-            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-            crossorigin="anonymous"
-        ></script>
+        <script src="src/library/jquery/jquery-3.7.1.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
         <script src="src/js/script.js"></script>
     </body>
 </html>

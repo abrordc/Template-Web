@@ -287,6 +287,7 @@ nav {
     height: 100px;
     object-fit: cover;
 }
+
 .back-to-top {
     position: fixed;
     right: 30px;
@@ -298,4 +299,168 @@ nav {
     justify-content: center;
     transition: 0.5s;
     z-index: 99;
+}
+#exitfull {
+    display: none;
+}
+
+.fullscreen {
+    position: fixed;
+    left: 30px;
+    top: 150px;
+    display: flex;
+    width: 45px;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    z-index: 99;
+}
+/* margin style fullscreen icons */
+.m {
+    margin-left: 1px;
+}
+
+/* style  struktur guru*/
+.org-chart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    position: relative;
+}
+
+.level {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    margin-bottom: 50px; /* Increased spacing for lines */
+}
+
+.node {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0 20px; /* Margin on sides for better spacing */
+    text-align: center;
+    max-width: 200px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    flex: 1 1 24%;
+    margin-bottom: 25px;
+}
+
+.node img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.node p {
+    margin: 0;
+    font-size: 14px;
+}
+.box-teacher {
+    border: 1px solid #000;
+    padding: 15px;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+.title-teachers {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 10px;
+    text-align: center;
+}
+
+/* Line above the root node */
+.root::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 2px;
+    height: 20px;
+    background-color: #000;
+    transform: translateX(-50%);
+}
+.dec-guru {
+    margin-top: 10px;
+    border-top: 0.5px solid #000;
+    border-bottom: 0.5px solid #000;
+    font-size: 24px;
+}
+
+/* Lines above each node */
+/*.level .node::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    width: 2px;
+    height: 20px;
+    background-color: #000;
+    transform: translateX(-50%);
+} */
+
+/* Horizontal line connecting child nodes */
+/* level::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #000;
+    width: 100%;
+    z-index: -1;
+} */
+
+/* Vertical line from the level above */
+.level:first-of-type .node::before {
+    display: none; /* Remove line above the root node */
+}
+
+.level:first-of-type::before {
+    display: none; /* No horizontal line at the top level */
+}
+
+/* Remove unnecessary lines for last nodes on each level */
+.level .node:last-child::before,
+.level .node:first-child::before {
+    background-color: transparent;
+}
+@media (max-width: 1200px) {
+    .node {
+        flex: 1 0 45%; /* Two items per row for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .level {
+        flex-direction: column;
+        align-items: center;
+    }
+    .node {
+        flex: 1 0 100%; /* One item per row for small screens */
+    }
+    .box-teacher {
+        border: none;
+        border-top: 1px solid #000;
+    }
+    .title-teachers {
+        top: 120px;
+    }
+    .node {
+        margin-bottom: 12px;
+    }
+    .level::before,
+    .node::before {
+        display: none;
+    }
 }

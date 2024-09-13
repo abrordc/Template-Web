@@ -244,6 +244,292 @@
                 </div>
             </div>
         </div>
+        <div class="org-chart">
+            <div class="level">
+                <div class="node root">
+                    <img src="../img/g1.jpeg" alt="Head of Department" />
+                    <a data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        <p>Mohammad Rahman</p>
+                        <p>Kepala Sekolah</p>
+                    </a>
+                </div>
+            </div>
+            <div class="box-teacher">
+                <!--                 <h1 class="title-teachers">SEMUA GURU</h1> -->
+                <div class="level">
+                    <div class="node">
+                        <img src="../img/g1.jpeg" alt="Kaprodi Pasca Sarjana" />
+                        <a
+                            data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop"
+                        >
+                            <p>Yusron Farid</p>
+                            <p>guru</p>
+                        </a>
+                    </div>
+                    <div class="node">
+                        <img src="../img/g1.jpeg" alt="Sekde" />
+                        <a
+                            data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop"
+                        >
+                            <p>Seprita Hardy</p>
+                            <p>guru</p>
+                        </a>
+                    </div>
+                    <div class="node">
+                        <img src="../img/g1.jpeg" alt="Sekde" />
+                        <a
+                            data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop"
+                        >
+                            <p>Seprita Hardy</p>
+                            <p>guru</p>
+                        </a>
+                    </div>
+                    <div class="node">
+                        <img src="../img/g1.jpeg" alt="Sekde" />
+                        <a
+                            data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop"
+                        >
+                            <p>Seprita Hardy</p>
+                            <p>guru</p>
+                        </a>
+                    </div>
+                    <div class="node">
+                        <img src="../img/g1.jpeg" alt="Sekde" />
+                        <a
+                            data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop"
+                        >
+                            <p>Seprita Hardy</p>
+                            <p>guru</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- modal -->
+        <div
+            class="modal fade"
+            id="staticBackdrop"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            tabindex="-1"
+            aria-labelledby="staticBackdropLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                            Detail Guru
+                        </h1>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <img
+                            src="../img/g1.jpeg"
+                            alt="gambar g"
+                            class="img-fluid"
+                        />
+                        <p class="dec-guru">
+                            Nip :
+                            <span>2028292929828282</span>
+                        </p>
+                        <p class="dec-guru">
+                            Nama :
+                            <span>yusril pratama</span>
+                        </p>
+                        <p class="dec-guru">
+                            pembina :
+                            <span>pejabat</span>
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal"
+                        >
+                            Close
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- end modal -->
+
+        <footer
+            class="container-fluid position-relative overlay-top bg-dark text-white-50 py-5"
+            style="margin-top: 90px"
+        >
+            <div class="container mt-5 pt-5">
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <a href="index.html" class="navbar-brand">
+                            <h1 class="mt-n2 text-uppercase text-white">
+                                <i class="bi bi-book"></i> SDN 1 GALIS
+                            </h1>
+                        </a>
+                        <p class="m-0">
+                            Accusam nonumy clita sed rebum kasd eirmod elitr.
+                            Ipsum ea lorem at et diam est, tempor rebum ipsum
+                            sit ea tempor stet et consetetur dolores. Justo stet
+                            diam ipsum lorem vero clita diam
+                        </p>
+                        <div class="container mt-3 d-none d-md-inline">
+                            <div style="width: 100%">
+                                <iframe
+                                    width="100%"
+                                    height="600"
+                                    frameborder="0"
+                                    scrolling="no"
+                                    marginheight="0"
+                                    marginwidth="0"
+                                    src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=VH22+M5R,%20Bulay,%20Kec.%20Galis,%20Kabupaten%20Pamekasan,%20Jawa%20Timur%2069382+(SDN%20galis%201)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                                    >erro</iframe
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-5">
+                        <h3 class="text-white mb-4">Cari Informasi Disini</h3>
+                        <div class="w-100">
+                            <div class="input-group">
+                                <form
+                                    role="search"
+                                    action="https://sdngalis1.com/pencarian"
+                                    method="post"
+                                >
+                                    <div class="input-group">
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            placeholder="Search"
+                                            name="kata"
+                                            id="kata"
+                                            required
+                                            pattern="[a-zA-Z0-9 ]+"
+                                            autocomplete="off"
+                                        />
+                                        <span class="input-group-btn">
+                                            <button
+                                                type="submit"
+                                                class="btn btn-template-main"
+                                            >
+                                                <i class="bi bi-search"></i>
+                                            </button>
+                                        </span>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <h3 class="text-white">Berita Terbaru</h3>
+                            <a href="budle/detail_berita.html">
+                                <div class="article-item">
+                                    <img
+                                        src="img/bg-new.jpg"
+                                        class="img-thumbnail"
+                                        alt="Image 1"
+                                    />
+                                    <div>
+                                        <p class="text-white ms-2">
+                                            Peran Guru dalam Membentuk Karakter
+                                            Siswa: Lebih dari Sekadar Penyampa
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="budle/detail_berita.html">
+                                <div class="article-item">
+                                    <img
+                                        src="img/bg-new.jpg"
+                                        class="img-thumbnail"
+                                        alt="Image 1"
+                                    />
+                                    <div>
+                                        <p class="text-white ms-2">
+                                            Peran Guru dalam Membentuk Karakter
+                                            Siswa: Lebih dari Sekadar Penyampa
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="budle/detail_berita.html">
+                                <div class="article-item">
+                                    <img
+                                        src="img/bg-new.jpg"
+                                        class="img-thumbnail"
+                                        alt="Image 1"
+                                    />
+                                    <div>
+                                        <p class="text-white ms-2">
+                                            Peran Guru dalam Membentuk Karakter
+                                            Siswa: Lebih dari Sekadar Penyampa
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 mb-5">
+                        <h3 class="text-white mb-4">Infomasi sekolah</h3>
+                        <p>
+                            <i class="bi bi-geo-alt"></i>&nbsp;Dusun Pangilen,
+                            Desa Galis, Kecamatan Galis, Kabupaten Pamekasan,
+                            Madura, Jawa Timur, Indonesia
+                        </p>
+                        <p>
+                            <i class="bi bi-phone"></i>&nbsp;+62 876 668 876 24
+                        </p>
+                        <i class="bi bi-envelope"></i>&nbsp;
+                        <a href="mailto:kepalasekolah@example.com"
+                            >kepalasekolah@example.com
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <h3 class="text-white mb-4">prosess isi content</h3>
+                    <div class="d-flex flex-column justify-content-start">
+                        proses konten...
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div
+            class="container-fluid bg-dark text-white-50 border-top py-4"
+            style="border-color: rgba(256, 256, 256, 0.1) !important"
+        >
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
+                        <p class="m-0">
+                            Editor &copy;2024
+                            <a class="text-white" href="#">Abrordc</a>
+                        </p>
+                    </div>
+                    <div class="col-md-6 text-center text-md-right">
+                        <p class="m-0">
+                            Designed by
+                            <a class="text-white" href="">&#38; Dc</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <script src="https://sdngalis1.com/js/jquery/1.11.0/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     </body>
